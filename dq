@@ -1,0 +1,943 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local HAX = Instance.new("ScreenGui")
+local DragUi = Instance.new("Frame")
+local FEhaxText = Instance.new("Frame")
+local mainscript = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
+local TextButton_8 = Instance.new("TextButton")
+local TextButton_9 = Instance.new("TextButton")
+local FeHaxText1 = Instance.new("TextLabel")
+local Credit = Instance.new("TextLabel")
+local Credit_2 = Instance.new("TextLabel")
+local CreditFrame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Frame = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local SettingsFrame = Instance.new("Frame")
+local TextBox_2 = Instance.new("TextBox")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextBox3 = Instance.new("TextBox")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextButton_10 = Instance.new("TextButton")
+local TextButton_11 = Instance.new("TextButton")
+local TextButton_12 = Instance.new("TextButton")
+local TextBox4 = Instance.new("TextBox")
+local TextLabel_5 = Instance.new("TextLabel")
+local SETTINGS = Instance.new("TextButton")
+local Commands = Instance.new("TextButton")
+local CREDITS = Instance.new("TextButton")
+local line = Instance.new("Frame")
+local CloseOpen = Instance.new("TextButton")
+
+--Properties:
+
+HAX.Name = "HAX"
+HAX.Parent = game:GetService("CoreGui")
+HAX.ResetOnSpawn = false
+
+DragUi.Name = "DragUi"
+DragUi.Parent = HAX
+DragUi.BackgroundColor3 = Color3.fromRGB(67, 66, 67)
+DragUi.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DragUi.BorderSizePixel = 0
+DragUi.Position = UDim2.new(0.0403521769, 148, 0.219354838, 53)
+DragUi.Size = UDim2.new(0, 397, 0, 21)
+
+FEhaxText.Name = "FEhaxText"
+FEhaxText.Parent = DragUi
+FEhaxText.BackgroundColor3 = Color3.fromRGB(94, 92, 96)
+FEhaxText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FEhaxText.BorderSizePixel = 0
+FEhaxText.Position = UDim2.new(0, 0, 1, 0)
+FEhaxText.Size = UDim2.new(0, 397, 0, 71)
+
+mainscript.Name = "mainscript"
+mainscript.Parent = FEhaxText
+mainscript.BackgroundColor3 = Color3.fromRGB(40, 39, 40)
+mainscript.BorderColor3 = Color3.fromRGB(0, 0, 0)
+mainscript.BorderSizePixel = 0
+mainscript.Position = UDim2.new(0, 0, 1.00000048, 0)
+mainscript.Size = UDim2.new(0, 397, 0, 227)
+
+TextBox.Parent = mainscript
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.248743713, 0, 0.0530973449, 0)
+TextBox.Size = UDim2.new(0, 200, 0, 50)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+TextButton.Parent = mainscript
+TextButton.BackgroundColor3 = Color3.fromRGB(87, 84, 89)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0201005023, 0, 0.31844756, 0)
+TextButton.Size = UDim2.new(0, 86, 0, 38)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Spawn block"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+
+TextButton_2.Parent = mainscript
+TextButton_2.BackgroundColor3 = Color3.fromRGB(87, 84, 89)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.253768831, 0, 0.31844756, 0)
+TextButton_2.Size = UDim2.new(0, 91, 0, 38)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Add Dummy"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+TextButton_3.Parent = mainscript
+TextButton_3.BackgroundColor3 = Color3.fromRGB(87, 84, 89)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.507537603, 0, 0.31844756, 0)
+TextButton_3.Size = UDim2.new(0, 91, 0, 38)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Teleport Block"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+TextButton_4.Parent = mainscript
+TextButton_4.BackgroundColor3 = Color3.fromRGB(87, 84, 89)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.751256227, 0, 0.31844756, 0)
+TextButton_4.Size = UDim2.new(0, 91, 0, 38)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "UnAnchore dummy"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+
+TextButton_5.Parent = mainscript
+TextButton_5.BackgroundColor3 = Color3.fromRGB(87, 84, 89)
+TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0.0201005023, 0, 0.539589107, 0)
+TextButton_5.Size = UDim2.new(0, 86, 0, 38)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "Block To Specified User"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.TextSize = 14.000
+TextButton_5.TextWrapped = true
+
+TextButton_6.Parent = mainscript
+TextButton_6.BackgroundColor3 = Color3.fromRGB(87, 84, 89)
+TextButton_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.BorderSizePixel = 0
+TextButton_6.Position = UDim2.new(0.253768831, 0, 0.535183787, 0)
+TextButton_6.Size = UDim2.new(0, 91, 0, 38)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "WalkToPlayer"
+TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.TextSize = 14.000
+TextButton_6.TextWrapped = true
+
+TextButton_7.Parent = mainscript
+TextButton_7.BackgroundColor3 = Color3.fromRGB(87, 84, 89)
+TextButton_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.BorderSizePixel = 0
+TextButton_7.Position = UDim2.new(0.507537603, 0, 0.539589107, 0)
+TextButton_7.Size = UDim2.new(0, 91, 0, 38)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = "Thrown Model GUI"
+TextButton_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_7.TextSize = 14.000
+TextButton_7.TextWrapped = true
+
+TextButton_8.Parent = mainscript
+TextButton_8.BackgroundColor3 = Color3.fromRGB(87, 84, 89)
+TextButton_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.BorderSizePixel = 0
+TextButton_8.Position = UDim2.new(0.751256108, 0, 0.538711905, 0)
+TextButton_8.Size = UDim2.new(0, 91, 0, 38)
+TextButton_8.Font = Enum.Font.SourceSans
+TextButton_8.Text = "Protection"
+TextButton_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_8.TextSize = 14.000
+TextButton_8.TextWrapped = true
+
+TextButton_9.Parent = mainscript
+TextButton_9.BackgroundColor3 = Color3.fromRGB(87, 84, 89)
+TextButton_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_9.BorderSizePixel = 0
+TextButton_9.Position = UDim2.new(0.0201005023, 0, 0.750165641, 0)
+TextButton_9.Size = UDim2.new(0, 85, 0, 38)
+TextButton_9.Font = Enum.Font.SourceSans
+TextButton_9.Text = "Block To Lobby"
+TextButton_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_9.TextSize = 14.000
+TextButton_9.TextWrapped = true
+
+FeHaxText1.Name = "FeHaxText1"
+FeHaxText1.Parent = FEhaxText
+FeHaxText1.BackgroundColor3 = Color3.fromRGB(94, 92, 96)
+FeHaxText1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FeHaxText1.BorderSizePixel = 0
+FeHaxText1.Size = UDim2.new(0, 397, 0, 29)
+FeHaxText1.Font = Enum.Font.Arial
+FeHaxText1.Text = "Fe Hax GUI [OC VERSION] V4"
+FeHaxText1.TextColor3 = Color3.fromRGB(255, 255, 255)
+FeHaxText1.TextSize = 16.000
+
+Credit.Name = "Credit"
+Credit.Parent = FEhaxText
+Credit.BackgroundColor3 = Color3.fromRGB(40, 39, 40)
+Credit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Credit.BorderSizePixel = 0
+Credit.Position = UDim2.new(0.201004952, 0, 3.98412728, 0)
+Credit.Size = UDim2.new(0, 318, 0, 24)
+Credit.Visible = false
+Credit.Font = Enum.Font.Arial
+Credit.Text = "Some Script made by _water2"
+Credit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit.TextSize = 24.000
+Credit.TextWrapped = true
+
+Credit_2.Name = "Credit"
+Credit_2.Parent = FEhaxText
+Credit_2.BackgroundColor3 = Color3.fromRGB(40, 39, 40)
+Credit_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Credit_2.BorderSizePixel = 0
+Credit_2.Position = UDim2.new(0.29396978, 0, 3.46031761, 0)
+Credit_2.Size = UDim2.new(0, 281, 0, 18)
+Credit_2.Visible = false
+Credit_2.Font = Enum.Font.Arial
+Credit_2.Text = "Gui made by wa_ter"
+Credit_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit_2.TextSize = 24.000
+Credit_2.TextWrapped = true
+
+CreditFrame.Name = "CreditFrame"
+CreditFrame.Parent = FEhaxText
+CreditFrame.BackgroundColor3 = Color3.fromRGB(40, 39, 40)
+CreditFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CreditFrame.BorderSizePixel = 0
+CreditFrame.Position = UDim2.new(0, 0, 1.00000024, 0)
+CreditFrame.Size = UDim2.new(0, 398, 0, 226)
+CreditFrame.Visible = false
+
+TextLabel.Parent = CreditFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(40, 39, 40)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0175879393, 0, 0.0442477874, 0)
+TextLabel.Size = UDim2.new(0, 298, 0, 87)
+TextLabel.Font = Enum.Font.JosefinSans
+TextLabel.LineHeight = 3.000
+TextLabel.Text = "_water2 - Scripted Some Stuff"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 20.000
+TextLabel.TextWrapped = true
+
+Frame.Parent = CreditFrame
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0326633155, 0, 0.486725658, 0)
+Frame.Size = UDim2.new(0, 315, 0, -1)
+
+TextLabel_2.Parent = CreditFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(40, 39, 40)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0326633155, 0, 0.557522118, 0)
+TextLabel_2.Size = UDim2.new(0, 301, 0, 31)
+TextLabel_2.Font = Enum.Font.JosefinSans
+TextLabel_2.Text = "wa_ter - made the ui"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 20.000
+TextLabel_2.TextWrapped = true
+
+SettingsFrame.Name = "SettingsFrame"
+SettingsFrame.Parent = FEhaxText
+SettingsFrame.BackgroundColor3 = Color3.fromRGB(40, 39, 40)
+SettingsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SettingsFrame.BorderSizePixel = 0
+SettingsFrame.Position = UDim2.new(0, 0, 1.00000024, 0)
+SettingsFrame.Size = UDim2.new(0, 398, 0, 227)
+SettingsFrame.Visible = false
+
+TextBox_2.Parent = SettingsFrame
+TextBox_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_2.BorderSizePixel = 0
+TextBox_2.Position = UDim2.new(0.0577889457, 0, 0.06167401, 0)
+TextBox_2.Size = UDim2.new(0, 154, 0, 35)
+TextBox_2.Font = Enum.Font.SourceSans
+TextBox_2.PlaceholderText = "1 / 200"
+TextBox_2.Text = ""
+TextBox_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_2.TextSize = 14.000
+
+TextLabel_3.Parent = SettingsFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(40, 39, 40)
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.46482411, 0, 0.06167401, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 35)
+TextLabel_3.Font = Enum.Font.Arial
+TextLabel_3.Text = "- Add Dummy"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 20.000
+
+TextBox3.Name = "TextBox3"
+TextBox3.Parent = SettingsFrame
+TextBox3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox3.BorderSizePixel = 0
+TextBox3.Position = UDim2.new(0.0577889457, 0, 0.259911895, 0)
+TextBox3.Size = UDim2.new(0, 154, 0, 35)
+TextBox3.Font = Enum.Font.SourceSans
+TextBox3.PlaceholderText = "0 / inf"
+TextBox3.Text = ""
+TextBox3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox3.TextSize = 14.000
+
+TextLabel_4.Parent = SettingsFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(40, 39, 40)
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.46482411, 0, 0.259911895, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 35)
+TextLabel_4.Font = Enum.Font.Arial
+TextLabel_4.Text = "- Distance when spawning Part"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 20.000
+TextLabel_4.TextWrapped = true
+
+TextButton_10.Parent = SettingsFrame
+TextButton_10.BackgroundColor3 = Color3.fromRGB(87, 84, 89)
+TextButton_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_10.BorderSizePixel = 0
+TextButton_10.Position = UDim2.new(0.0577889457, 0, 0.440528631, 0)
+TextButton_10.Size = UDim2.new(0, 154, 0, 29)
+TextButton_10.Font = Enum.Font.Arial
+TextButton_10.Text = "Reduce Lag"
+TextButton_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_10.TextSize = 20.000
+
+TextButton_11.Parent = SettingsFrame
+TextButton_11.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+TextButton_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_11.BorderSizePixel = 0
+TextButton_11.Position = UDim2.new(0.585427165, 0, 0.819383264, 0)
+TextButton_11.Size = UDim2.new(0, 154, 0, 29)
+TextButton_11.Font = Enum.Font.Arial
+TextButton_11.Text = "DELETE GUI"
+TextButton_11.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_11.TextSize = 20.000
+
+TextButton_12.Parent = SettingsFrame
+TextButton_12.BackgroundColor3 = Color3.fromRGB(87, 84, 89)
+TextButton_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_12.BorderSizePixel = 0
+TextButton_12.Position = UDim2.new(0.0577889457, 0, 0.819383264, 0)
+TextButton_12.Size = UDim2.new(0, 154, 0, 29)
+TextButton_12.Font = Enum.Font.Arial
+TextButton_12.Text = "Set Speed"
+TextButton_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_12.TextSize = 20.000
+
+TextBox4.Name = "TextBox4"
+TextBox4.Parent = SettingsFrame
+TextBox4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox4.BorderSizePixel = 0
+TextBox4.Position = UDim2.new(0.0577889457, 0, 0.634361207, 0)
+TextBox4.Size = UDim2.new(0, 154, 0, 35)
+TextBox4.Font = Enum.Font.SourceSans
+TextBox4.PlaceholderText = "0 / inf (Speed)"
+TextBox4.Text = ""
+TextBox4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox4.TextSize = 14.000
+
+TextLabel_5.Parent = SettingsFrame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(40, 39, 40)
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.46482411, 0, 0.634361207, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 35)
+TextLabel_5.Font = Enum.Font.Arial
+TextLabel_5.Text = "- Set The Dummy WalkSpeed"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 20.000
+TextLabel_5.TextWrapped = true
+
+SETTINGS.Name = "SETTINGS"
+SETTINGS.Parent = FEhaxText
+SETTINGS.BackgroundColor3 = Color3.fromRGB(94, 92, 96)
+SETTINGS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SETTINGS.BorderSizePixel = 0
+SETTINGS.Position = UDim2.new(0.562617898, 0, 0.57142961, 0)
+SETTINGS.Size = UDim2.new(0, 99, 0, 25)
+SETTINGS.AutoButtonColor = false
+SETTINGS.Font = Enum.Font.SourceSans
+SETTINGS.Text = "SETTINGS"
+SETTINGS.TextColor3 = Color3.fromRGB(255, 255, 255)
+SETTINGS.TextSize = 20.000
+
+Commands.Name = "Commands"
+Commands.Parent = FEhaxText
+Commands.BackgroundColor3 = Color3.fromRGB(94, 92, 96)
+Commands.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Commands.BorderSizePixel = 0
+Commands.Position = UDim2.new(0.0175879635, 0, 0.57142961, 0)
+Commands.Size = UDim2.new(0, 109, 0, 25)
+Commands.AutoButtonColor = false
+Commands.Font = Enum.Font.SourceSans
+Commands.Text = "COMMANDS"
+Commands.TextColor3 = Color3.fromRGB(255, 255, 255)
+Commands.TextSize = 20.000
+
+CREDITS.Name = "CREDITS"
+CREDITS.Parent = FEhaxText
+CREDITS.BackgroundColor3 = Color3.fromRGB(94, 92, 96)
+CREDITS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CREDITS.BorderSizePixel = 0
+CREDITS.Position = UDim2.new(0.291362315, 0, 0.57142961, 0)
+CREDITS.Size = UDim2.new(0, 108, 0, 25)
+CREDITS.AutoButtonColor = false
+CREDITS.Selected = true
+CREDITS.Font = Enum.Font.SourceSans
+CREDITS.Text = "CREDITS"
+CREDITS.TextColor3 = Color3.fromRGB(255, 255, 255)
+CREDITS.TextSize = 20.000
+
+line.Name = "line"
+line.Parent = FEhaxText
+line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+line.BorderColor3 = Color3.fromRGB(0, 0, 0)
+line.BorderSizePixel = 0
+line.Position = UDim2.new(0.0427135676, 0, 1, 0)
+line.Size = UDim2.new(0, 107, 0, -2)
+
+CloseOpen.Name = "CloseOpen"
+CloseOpen.Parent = DragUi
+CloseOpen.BackgroundColor3 = Color3.fromRGB(67, 66, 67)
+CloseOpen.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseOpen.BorderSizePixel = 0
+CloseOpen.Position = UDim2.new(0.99999994, 0, 0, 0)
+CloseOpen.Size = UDim2.new(0, -30, 0, 21)
+CloseOpen.Font = Enum.Font.SourceSans
+CloseOpen.Text = "_"
+CloseOpen.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen.TextSize = 14.000
+
+-- Scripts:
+
+local function TAUQO_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local plr = game.Players.LocalPlayer.Name
+	
+	local function DummyToPart()
+		-- fix
+		local plr = game.Players.LocalPlayer.Name
+		local e = {}
+		for i,v in pairs(workspace.Obbies[plr].Items.Special:GetDescendants()) do
+			if v:IsA("Part") and v.Name == "Torso" then
+				table.insert(e, v:FindFirstChildWhichIsA("Attachment"))
+			end
+		end
+		game:GetService("ReplicatedStorage").Events.DeleteObject:InvokeServer(e)
+	end
+	
+	
+	local button = script.Parent
+	button.MouseButton1Click:Connect(DummyToPart)
+end
+coroutine.wrap(TAUQO_fake_script)()
+local function ZJQMRHV_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local text = script.Parent.Parent.Parent.SettingsFrame.TextBox
+	local plr = game.Players.LocalPlayer.Name
+	
+	local function CreateDummy()
+		if text.Text == "" then
+		local m = {}
+		for i = 1, 200 do
+			local t = {}
+			table.insert(m, t)
+			table.insert(t, workspace.Obbies[plr].Items.Special:FindFirstChildWhichIsA("Model").Head)
+			table.insert(t, workspace.Obbies[plr].Area.Area.CFrame);table.insert(t, workspace.Obbies[plr].Area.Area.Size)
+			if #m >= 200 then
+				game.ReplicatedStorage.Events.CloneObject:InvokeServer(m)
+			end
+		end
+		elseif text.Text ~= "" then
+			local m = {}
+			for i = 1, tonumber(text.Text) do
+				local t = {}
+				table.insert(m, t)
+				table.insert(t, workspace.Obbies[plr].Items.Special:FindFirstChildWhichIsA("Model").Head)
+				table.insert(t, workspace.Obbies[plr].Area.Area.CFrame);table.insert(t, workspace.Obbies[plr].Area.Area.Size)
+				if #m >= tonumber(text.Text) then
+					game.ReplicatedStorage.Events.CloneObject:InvokeServer(m)
+				end
+			end
+		end
+	end
+	local button = script.Parent
+	button.MouseButton1Click:Connect(CreateDummy)
+end
+coroutine.wrap(ZJQMRHV_fake_script)()
+local function UAJFM_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	local function TPPART()
+		local plr = game.Players.LocalPlayer.Name
+		local SpecialFolder = workspace.Obbies[plr].Items.Special:GetDescendants()
+		local distance = script.Parent.Parent.Parent.SettingsFrame.TextBox3.Text
+	for i = 1,10 do
+		for i,c in pairs(SpecialFolder) do
+			if c:IsA("Part") then
+				if c.Anchored == false then 
+						c.Position = game.Players.LocalPlayer.Character.Head.Position + Vector3.new(0,i * tonumber(distance),0)
+				elseif distance.Text == "" then
+						c.Position = game.Players.LocalPlayer.Character.Head.Position + Vector3.new(0,i * 0.2,0)
+				end
+			end
+		end
+	end
+	end
+	
+	
+	local button = script.Parent
+	button.MouseButton1Click:Connect(TPPART)
+end
+coroutine.wrap(UAJFM_fake_script)()
+local function MJPW_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local number = script.Parent.Parent.Parent.SettingsFrame.TextBox.Text
+	
+	local function unanchored()
+		local tab={};plr=game.Players.LocalPlayer.Name;ob=workspace.Obbies[plr].Items.Special:GetChildren()
+		for _,v in pairs(ob) do
+			if v:IsA("Model") and #tab <= 500 then
+				table.insert(tab, v.RootPart.RootAttachment)
+			end
+		end
+		game.ReplicatedStorage.Events.DeleteObject:InvokeServer(tab)
+	end
+	local button = script.Parent
+	button.MouseButton1Click:Connect(unanchored)
+end
+coroutine.wrap(MJPW_fake_script)()
+local function WTBYRU_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	local function FindPlayer()
+		local textbox = script.Parent.Parent.TextBox
+		local distance = 0.2
+		for i,v in pairs(game.Players:GetPlayers()) do
+			if string.find(v.Name, textbox.Text) then
+				local plr = game.Players.LocalPlayer.Name
+				local SpecialFolder = workspace.Obbies[plr].Items.Special:GetDescendants()
+				for i,c in pairs(SpecialFolder) do
+					if c:IsA("Part") then
+						if c.Anchored == false then 
+							c.CFrame = game.Players[v.Name].Character.Head.CFrame * CFrame.new(0,10,0)
+						end
+					end
+				end
+			elseif string.find(textbox.Text, "me") or string.find(textbox.Text, "Me") or string.find(textbox.Text, "ME")then
+				local plr = game.Players.LocalPlayer.Name
+				local SpecialFolder = workspace.Obbies[plr].Items.Special:GetDescendants()
+				for i,c in pairs(SpecialFolder) do
+					if c:IsA("Part") then
+						if c.Anchored == false then 
+							c.CFrame = game.Players.LocalPlayer.Character.Head.CFrame * CFrame.new(0,10,0)
+						end
+					end
+				end
+			elseif string.find(textbox.Text, "all") or string.find(textbox.Text, "All") or string.find(textbox.Text, "ALL") then
+				local plr = game.Players.LocalPlayer.Name
+				local players = game.Players:GetPlayers()
+	
+				for i,v in pairs(workspace.Obbies[plr].Items.Special:GetDescendants()) do
+					if v:IsA("Part") and v.Anchored == false then
+						local player = players[math.random(1, #players)]
+						for i = 1,10 do
+							local position = player.Character.Head.Position + Vector3.new(0,i * 0.2,0)
+							v.CFrame = CFrame.new(position)
+						end
+					end
+				end	
+			end
+		end
+	end
+	
+	local button = script.Parent
+	button.MouseButton1Click:Connect(FindPlayer)
+	
+end
+coroutine.wrap(WTBYRU_fake_script)()
+local function HFTE_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	local textbox = script.Parent.Parent.TextBox
+	
+	local function WalkToPoint()
+		for i,v in pairs(game.Players:GetPlayers()) do
+			if string.find(v.Name, textbox.Text) then
+				local plr = game.Players.LocalPlayer.Name
+				local SpecialFolder = workspace.Obbies[plr].Items.Special:GetChildren()
+				for i,c in pairs(SpecialFolder) do
+					c.Humanoid.WalkToPoint = game.Players[v.Name].Character.Head.Position
+				end
+			elseif string.find("me", textbox.Text) or string.find("Me", textbox.Text) or string.find("ME", textbox.Text) then
+				local plr = game.Players.LocalPlayer.Name
+				local SpecialFolder = workspace.Obbies[plr].Items.Special:GetChildren()
+				for i,c in pairs(SpecialFolder) do
+					c.Humanoid.WalkToPoint = game.Players.LocalPlayer.Character.Head.Position
+				end
+			end     
+		end	
+	end
+	
+	local button = script.Parent
+	button.MouseButton1Click:Connect(WalkToPoint)
+	
+end
+coroutine.wrap(HFTE_fake_script)()
+local function VLSGUD_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	local textbox = nil
+	
+	local function Thrown()
+		local plr = game.Players.LocalPlayer
+		local ob = workspace.Obbies[plr.Name].Items.Special.Mannequin.Torso
+	
+		local alignpos = Instance.new("AlignPosition", ob)
+		local alignrot = Instance.new("AlignOrientation", ob)
+		local att0 = Instance.new("Attachment", ob)
+		local att1 = Instance.new("Attachment", plr.Character.HumanoidRootPart)
+	
+		local throw = Instance.new("TextButton", game.CoreGui.RobloxGui)
+		local edit = Instance.new("TextButton", game.CoreGui.RobloxGui)
+	
+		alignpos.Attachment0 = att0
+		alignpos.Attachment1 = att1
+		alignpos.MaxForce = math.huge
+		alignpos.MaxVelocity = math.huge
+		alignpos.MaxAxesForce = Vector3.new(math.huge, math.huge, math.huge)
+		alignpos.Responsiveness = 10
+	
+		alignrot.Attachment0 = att0
+		alignrot.Attachment1 = att1
+		alignrot.MaxAngularVelocity = math.huge
+		alignrot.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
+		alignrot.Responsiveness = 10
+	
+		att1.CFrame = CFrame.new(0, 3, -5)
+	
+		throw.Size = UDim2.new(0.1, 0, 0.1, 0)
+		throw.Name = "Thrown Dummy"
+		edit.Name = "Grab Dummy"
+		edit.Size = throw.Size
+		edit.Position = UDim2.new(0.1, 0, 0, 0)
+	
+		local editing = false
+	
+		edit.Activated:Connect(function()
+			editing = not editing
+		end)
+	
+		local function ThrowHim(obj, val, UpVect, BVMaxForce)
+			local BV = Instance.new("BodyVelocity", obj or ob)
+			local val0 = val or 100
+			local UpVect0 = UpVect or Vector3.new(0, 50, 0)
+	
+			BV.MaxForce = BVMaxForce or Vector3.new(100000, 100000, 100000)
+			BV.Velocity = plr.Character.HumanoidRootPart.CFrame.LookVector * val0 + UpVect0
+	
+			game:GetService("Debris"):AddItem(BV, 0.5)
+		end
+	
+		throw.Activated:Connect(function()
+			ThrowHim()
+		end)
+	
+		while task.wait(0.5) do
+			local m = ob.Parent:GetChildren()
+			for _, v in pairs(m) do
+				if v:IsA("Part") or v:IsA("MeshPart") then
+					local cc = v.CanCollide
+					local tr = v.Transparency
+					if editing and cc and tr <= 0.499 then
+						alignpos.Enabled = true
+						alignrot.Enabled = true
+						v.Transparency = 0.5
+						v.CanCollide = false
+					elseif not editing and not cc and tr >= 0.5 then
+						alignpos.Enabled = false
+						alignrot.Enabled = false
+						v.Transparency = 0
+						v.CanCollide = true
+					end
+				end
+			end
+		end
+	end
+	
+	local button = script.Parent
+	button.MouseButton1Click:Connect(Thrown)
+	
+end
+coroutine.wrap(VLSGUD_fake_script)()
+local function UEYN_fake_script() -- TextButton_8.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_8)
+
+	local function Protect()
+		local p = Instance.new("Part",workspace)
+		p.Anchored = true
+		p.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,-9,0)
+		p.Size = Vector3.new(500000000000000,1,500000000000000)
+	end
+	
+	
+	local button = script.Parent
+	button.MouseButton1Click:Connect(Protect)
+end
+coroutine.wrap(UEYN_fake_script)()
+local function CRMRA_fake_script() -- TextButton_9.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_9)
+
+	local text = script.Parent.Parent.Parent.SettingsFrame.TextBox3
+	
+	local function Lobby()
+		local plr = game.Players.LocalPlayer.Name
+		for i,v in pairs(workspace.Obbies[plr].Items.Special:GetDescendants()) do
+			if v:IsA("Part") and v.Anchored == false then
+				v.CFrame = CFrame.new(0,0,0) *  CFrame.new(math.random(-1563,1317),math.random(1,100),math.random(-tonumber(text.Text),tonumber(text.Text)))
+			end
+		end
+	end
+	
+	
+	local button = script.Parent
+	button.MouseButton1Click:Connect(Lobby)
+end
+coroutine.wrap(CRMRA_fake_script)()
+local function BWFFQD_fake_script() -- TextButton_10.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_10)
+
+	local number = script.Parent.Parent.TextBox3
+	
+	local function ReduceLag()
+		local plr = game.Players.LocalPlayer.Name
+		local SpecialFolder = workspace.Obbies[plr].Items.Special
+	
+		for i,c in pairs(SpecialFolder:GetDescendants()) do
+			if c:IsA("Part") then
+				if c.Anchored == false then 
+					c.Transparency = tonumber(number.Text)
+				end
+			end
+		end
+	end
+	b = script.Parent
+	b.MouseButton1Click:Connect(ReduceLag)
+end
+coroutine.wrap(BWFFQD_fake_script)()
+local function GAYXN_fake_script() -- TextButton_11.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_11)
+
+	
+	local function Delete()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.HAX:Destroy()
+	end
+	b = script.Parent
+	b.MouseButton1Click:Connect(Delete)
+end
+coroutine.wrap(GAYXN_fake_script)()
+local function KEXBL_fake_script() -- TextButton_12.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_12)
+
+	local function SetSpeed()
+		local plr = game.Players.LocalPlayer.Name
+		local SpecialFolder = workspace.Obbies[plr].Items.Special
+	
+		for i,c in pairs(SpecialFolder:GetDescendants()) do
+			if c:IsA("Humanoid") then
+				c.WalkSpeed = tonumber(script.Parent.Parent.TextBox4.Text)
+			end
+		end
+	end
+	b = script.Parent
+	b.MouseButton1Click:Connect(SetSpeed)
+end
+coroutine.wrap(KEXBL_fake_script)()
+local function ZWUAZ_fake_script() -- SETTINGS.LocalScript 
+	local script = Instance.new('LocalScript', SETTINGS)
+
+	local TweenService = game:GetService("TweenService")
+	local a = script.Parent.Parent.line
+	
+	local function Show()
+		
+		for i,v in pairs(script.Parent.Parent.Parent.FEhaxText:GetChildren()) do
+			if v:IsA("Frame") then
+				if v.Name ~= "line" then
+				v.Visible = false
+					v.Parent.SettingsFrame.Visible = true
+	
+					-- a.AnchorPoint = Vector2.new(-2, -5)
+					local targetPosition = script.Parent.Position + UDim2.new(0,0,0.4,0)
+	
+					local tweenInfo = TweenInfo.new(0.5)
+					local tween = TweenService:Create(a, tweenInfo, {Position = targetPosition})
+	
+					tween:Play()
+					
+				end
+			end
+		end
+		-- script.Parent.Parent.FEhaxText.SettingsFrame.Visible = true
+	end
+	
+	b = script.Parent
+	b.MouseButton1Click:Connect(Show)
+end
+coroutine.wrap(ZWUAZ_fake_script)()
+local function RNVNQR_fake_script() -- Commands.LocalScript 
+	local script = Instance.new('LocalScript', Commands)
+
+	local TweenService = game:GetService("TweenService")
+	local a = script.Parent.Parent.line
+	
+	local function Show()
+		for i,v in pairs(script.Parent.Parent.Parent.FEhaxText:GetChildren()) do
+			if v:IsA("Frame") then
+				if v.Name ~= "line" then
+				v.Visible = false
+					v.Parent.mainscript.Visible = true
+					
+					local targetPosition = script.Parent.Position + UDim2.new(0,0,0.4,0)
+	
+					local tweenInfo = TweenInfo.new(0.5)
+					local tween = TweenService:Create(a, tweenInfo, {Position = targetPosition})
+	
+					tween:Play()
+				end
+			end
+		end
+		-- script.Parent.Parent.FEhaxText.mainscript.Visible = true
+	end
+	
+	b = script.Parent
+	b.MouseButton1Click:Connect(Show)
+end
+coroutine.wrap(RNVNQR_fake_script)()
+local function AQPAKX_fake_script() -- CREDITS.LocalScript 
+	local script = Instance.new('LocalScript', CREDITS)
+
+	local TweenService = game:GetService("TweenService")
+	local a = script.Parent.Parent.line
+	
+	local function Show()
+		for i,v in pairs(script.Parent.Parent.Parent.FEhaxText:GetChildren()) do
+			if v:IsA("Frame") then
+				if v.Name ~= "line" then
+				v.Visible = false
+					v.Parent.CreditFrame.Visible = true
+					
+					local targetPosition = script.Parent.Position + UDim2.new(0,0,0.4,0)
+	
+					local tweenInfo = TweenInfo.new(0.5)
+					local tween = TweenService:Create(a, tweenInfo, {Position = targetPosition})
+	
+					tween:Play()
+				end
+			end
+		end
+		-- script.Parent.Parent.FEhaxText.CreditFrame.Visible = true
+	end
+	
+	b = script.Parent
+	b.MouseButton1Click:Connect(Show)
+end
+coroutine.wrap(AQPAKX_fake_script)()
+local function HYSL_fake_script() -- DragUi.LocalScript 
+	local script = Instance.new('LocalScript', DragUi)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(HYSL_fake_script)()
+local function CUHTSJ_fake_script() -- CloseOpen.LocalScript 
+	local script = Instance.new('LocalScript', CloseOpen)
+
+	local function d()
+		local a = script.Parent.Parent.FEhaxText
+			a.Visible = not a.Visible
+	end
+	
+	local b = script.Parent
+	b.MouseButton1Click:Connect(d)
+	
+end
+coroutine.wrap(CUHTSJ_fake_script)()
